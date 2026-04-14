@@ -8,7 +8,13 @@
   "projects": {
     "site-vitrine": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+          "@schematics/angular:component": {
+            "standalone": true,
+            "type": "component",
+            "style": "css"
+          }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
