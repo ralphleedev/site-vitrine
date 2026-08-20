@@ -1,4 +1,4 @@
-
+<header class="header">
   <div class="container">
     
     <!-- Logo -->
@@ -8,7 +8,7 @@
 
     <!-- Desktop nav -->
     <nav class="nav">
-      <a routerLink="">Home</a>
+      <a routerLink="/">Home</a>
       <a routerLink="/about">About Me</a>
       <a routerLink="/projects">Projects</a>
       <a routerLink="/contact">Contact</a>
@@ -16,15 +16,18 @@
 
     <!-- Mobile menu button -->
     <button class="menu-btn" (click)="toggleMenu()">
-      ☰
+      <img
+        class="menu-icon"
+        [src]= menuIcon
+      >
     </button>
-
   </div>
 
   <!-- Mobile dropdown -->
-  <div class="mobile-menu" *ngIf="isMenuOpen">
+  <div class="mobile-menu" [class.open]="isMenuOpen">
     <a routerLink="" (click)="closeMenu()">Home</a>
     <a routerLink="/about" (click)="closeMenu()">About Me</a>
     <a routerLink="/projects" (click)="closeMenu()">Projects</a>
     <a routerLink="/contact" (click)="closeMenu()">Contact</a>
   </div>
+</header>

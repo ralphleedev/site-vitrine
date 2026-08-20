@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #0F24E2;
+    --color-primary-light: #84C3ED;
+    --color-white: #FFFDF7;
+
+
+    --font-family-body: 'Cabin', sans-serif;
+
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+
+    --header-height: 64px;
+    --header-height-desktop: 72px;
+
+}
+
+/* Global styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: var(--font-family-body);
+}

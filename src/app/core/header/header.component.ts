@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-isMenuOpen = false;
+  isMenuOpen = false;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -18,4 +18,11 @@ isMenuOpen = false;
   closeMenu() {
     this.isMenuOpen = false;
   }
+
+  get menuIcon(): string {
+    return this.isMenuOpen
+      ? 'icons/menu-close.svg'
+      : 'icons/menu-hamburger.svg';
+  }
 }
+
