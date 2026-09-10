@@ -1,1 +1,35 @@
-<p>footer works!</p>
+<footer class="footer">
+    <div class="container">
+        <div class="footer_brand">
+            <!-- Logo -->
+            <div class="footer_logo">
+                MyLogo
+            </div>
+            <!-- Social Media Links -->
+            <div class="footer_socials">
+                <a [href]="links.linkedin.url" target="_blank" rel="noopener noreferrer">
+                    <img [src]="'icons/' + links.linkedin.icon + '.svg'" [alt]="links.linkedin.name"
+                        class="social_icon">
+                </a>
+                <a [href]="links.github.url" target="_blank" rel="noopener noreferrer">
+                    <img [src]="'icons/' + links.github.icon + '.svg'" [alt]="links.github.name">
+                </a>
+            </div>
+        </div>
+        <div class="footer_main">
+            <!-- Contact us -->
+            <div class="footer_contact">
+                <a routerLink="/contact">Contact Me</a>
+            </div>
+            <!-- Legal notice -->
+            <div class="footer_legal">
+                <a routerLink="/legal">Legal Notice</a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer_copyright">
+            <p>Ralph Lee © 2026.</p>
+        </div>
+    </div>
+
+</footer>

@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 :root {
-    --color-primary: #0F24E2;
-    --color-primary-light: #84C3ED;
-    --color-white: #FFFDF7;
+  --color-primary: #0F24E2;
+  --color-primary-light: #84C3ED;
+  --color-white: #FFFDF7;
 
 
-    --font-family-body: 'Cabin', sans-serif;
+  --font-family-body: 'Cabin', sans-serif;
 
-    --font-size-sm: 14px;
-    --font-size-base: 16px;
-    --font-size-lg: 18px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
 
-    --header-height: 64px;
-    --header-height-desktop: 72px;
+  --header-height: 64px;
+  --header-height-desktop: 72px;
 
+  --footer-padding-top: 48px;
+  --footer-padding-bottom: 24px;
+  --footer-padding-x: 24px;
+
+  --footer-padding-top-desktop: 64px;
+  --footer-padding-bottom-desktop: 32px;
+  --footer-padding-x-desktop: 48px;
+
+  --footer-icon-gap: 12px;
+  --footer-gap-desktop: 24px;
 }
 
 /* Global styles */
