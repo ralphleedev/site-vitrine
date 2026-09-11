@@ -30,7 +30,7 @@
    Mobile menu button
    ======================================== */
 
-.menu-btn {
+.menu_btn {
   width: 48px;
   height: 48px;
   padding: 0;
@@ -43,22 +43,22 @@
   justify-content: center;
 }
 
-.menu-icon {
+.menu_icon {
   width: 24px;
   height: 24px;
   display: block;
 }
 
 /* ========================================
-   Navigation
+   Controls
    ======================================== */
 
 /* Hidden on mobile */
-.nav {
+.header_controls {
   display: none;
 }
 
-.nav a {
+.header nav a {
   color: var(--color-white);
   text-decoration: none;
   font-weight: 400;
@@ -67,15 +67,31 @@
 
 }
 
+.header_controls .language_switch button {
+  color: var(--color-white);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--font-size-lg);
+  font-weight: 100;
+  opacity: 50%;
+}
+
+.header_controls .language_switch button.active {
+  opacity: 100%;
+  font-weight: 900;
+}
+
 /* ========================================
    Mobile menu
    ======================================== */
 
-.mobile-menu {
+.mobile_menu {
   display: none;
 }
 
-.mobile-menu.open {
+.mobile_menu.open {
   position: fixed;
   top: var(--header-height);
   right: 0;
@@ -91,17 +107,44 @@
   background: var(--color-white);
 }
 
-.mobile-menu a {
+.mobile_menu a {
   color: var(--color-primary);
   text-decoration: none;
   font-size: var(--font-size-lg);
+}
+
+.mobile_menu hr {
+  border: none;
+  border-top: 1px solid var(--color-primary);
+  width: var(--mobile-menu-separator-width);
+  align-self: center;
+}
+
+.mobile_menu .language_switch {
+  display: flex;
+  gap: var(--mobile-menu-language-gap);
+}
+
+.mobile_menu .language_switch button {
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 100;
+  opacity: 50%;
+}
+
+.mobile_menu .language_switch button.active {
+  opacity: 100%;
+  font-weight: 900;
 }
 
 /* ========================================
    Prevent page scrolling when menu is open
    ======================================== */
 
-html:has(.mobile-menu.open) {
+html:has(.mobile_menu.open) {
   overflow: hidden;
 }
 
@@ -123,7 +166,7 @@ html:has(.mobile-menu.open) {
     font-size: var(--font-size-base)
   }
 
-  .nav {
+  .header_controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,11 +175,18 @@ html:has(.mobile-menu.open) {
     margin-left: auto;
   }
 
-  .menu-btn {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .menu_btn {
     display: none;
   }
 
-  .mobile-menu.open {
+  .mobile_menu.open {
     display: none;
   }
 }

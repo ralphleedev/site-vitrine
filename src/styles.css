@@ -15,6 +15,9 @@
   --header-height: 64px;
   --header-height-desktop: 72px;
 
+  --mobile-menu-separator-width: 54px;
+  --mobile-menu-language-gap: 24px;
+
   --footer-padding-top: 48px;
   --footer-padding-bottom: 24px;
   --footer-padding-x: 24px;

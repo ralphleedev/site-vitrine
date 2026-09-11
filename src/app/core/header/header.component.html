@@ -1,33 +1,47 @@
 <header class="header">
   <div class="container">
-    
+
     <!-- Logo -->
     <div class="logo">
       MyLogo
     </div>
 
-    <!-- Desktop nav -->
-    <nav class="nav">
-      <a routerLink="/">Home</a>
-      <a routerLink="/about">About Me</a>
-      <a routerLink="/projects">Projects</a>
-      <a routerLink="/contact">Contact</a>
-    </nav>
+    <!-- Desktop header control -->
+    <div class="header_controls">
+      <nav class="nav">
+        <a routerLink="/">{{'header.home' | translate}}</a>
+        <a routerLink="/about">{{'header.about' | translate}}</a>
+        <a routerLink="/projects">{{'header.projects' | translate}}</a>
+        <a routerLink="/contact">{{'header.contact' | translate}}</a>
+      </nav>
+      <div class="language_switch">
+        @for (lang of languages; track lang) {
+        <button (click)="switchLanguage(lang)" [class.active]="translate.currentLang() === lang">
+          {{ lang.toUpperCase() }}
+        </button>
+        }
+      </div>
+    </div>
 
     <!-- Mobile menu button -->
-    <button class="menu-btn" (click)="toggleMenu()">
-      <img
-        class="menu-icon"
-        [src]= menuIcon
-      >
+    <button class="menu_btn" (click)="toggleMenu()">
+      <img class="menu_icon" [src]=menuIcon>
     </button>
   </div>
 
   <!-- Mobile dropdown -->
-  <div class="mobile-menu" [class.open]="isMenuOpen">
-    <a routerLink="" (click)="closeMenu()">Home</a>
-    <a routerLink="/about" (click)="closeMenu()">About Me</a>
-    <a routerLink="/projects" (click)="closeMenu()">Projects</a>
-    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+  <div class="mobile_menu" [class.open]="isMenuOpen">
+    <a routerLink="" (click)="closeMenu()">{{'header.home' | translate}}</a>
+    <a routerLink="/about" (click)="closeMenu()">{{'header.about' | translate}}</a>
+    <a routerLink="/projects" (click)="closeMenu()">{{'header.projects' | translate}}</a>
+    <a routerLink="/contact" (click)="closeMenu()">{{'header.contact' | translate}}</a>
+    <hr>
+    <div class="language_switch">
+      @for (lang of languages; track lang) {
+      <button (click)="switchLanguage(lang)" [class.active]="translate.currentLang() === lang">
+        {{ lang.toUpperCase() }}
+      </button>
+      }
+    </div>
   </div>
 </header>

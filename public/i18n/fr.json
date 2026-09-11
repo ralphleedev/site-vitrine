@@ -1,0 +1,13 @@
+{
+    "header": {
+        "home": "Acceuil",
+        "about": "À propos",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+    "footer": {
+        "contact": "Contact",
+        "legal": "Mentions légales",
+        "copyright": "Ralph Lee © 2026."
+    }
+}
