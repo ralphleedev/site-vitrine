@@ -64,7 +64,12 @@
   font-weight: 400;
   font-size: var(--font-size-lg);
   cursor: pointer;
+  padding: 8px;
+}
 
+.header nav a.active_link {
+  color: var(--color-primary);
+  background-color: var(--color-white);
 }
 
 .header_controls .language_switch button {
