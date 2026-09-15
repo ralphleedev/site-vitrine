@@ -1,0 +1,18 @@
+<!--
+  ng-content must exist only ONCE in this template. Angular can't reliably
+  project content into an <ng-content> sitting inside an @if/@else branch,
+  so we capture it here once and reuse it via ngTemplateOutlet below.
+-->
+<ng-template #contentTpl>
+    <ng-content></ng-content>
+</ng-template>
+
+@if(routerLink) {
+<a [class]="classes" [routerLink]="routerLink">
+    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+</a>
+} @else {
+<button [class]="classes" [disabled]="disabled" [type]="type">
+    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+</button>
+}

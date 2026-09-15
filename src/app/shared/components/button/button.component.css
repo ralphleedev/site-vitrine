@@ -1,0 +1,64 @@
+.btn {
+    font-family: var(--font-family-body);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s ease;
+}
+
+/* SOLID variant */
+.btn--solid.btn--primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--solid.btn--secondary {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.btn--solid.btn--white {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* OUTLINE variant */
+.btn--outline {
+    background: transparent;
+}
+
+.btn--outline.btn--primary {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn--outline.btn--secondary {
+    color: var(--color-primary-light);
+    border: 1px solid var(--color-primary-light);
+}
+
+.btn--outline.btn--white {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+
+.btn--sm {
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-sm);
+}
+
+.btn--md {
+    padding: 0.75rem 1.5rem;
+    font-size: var(--font-size-base);
+}
+
+.btn--lg {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-lg);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
