@@ -4,6 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Language } from '../../shared/enums/language.enums';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { AppRoutes } from '../../shared/constants/route-segments';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent {
 
   readonly languages = Object.values(Language);
+  routes = AppRoutes;
 
   isMenuOpen = false;
 
@@ -37,4 +39,3 @@ export class HeaderComponent {
       : 'icons/menu-hamburger.svg';
   }
 }
-

@@ -9,13 +9,14 @@
     <!-- Desktop header control -->
     <div class="header_controls">
       <nav class="nav">
-        <a routerLink="/" routerLinkActive="active_link" [routerLinkActiveOptions]="{ exact: true }">{{'header.home' |
+        <a [routerLink]="routes.home" routerLinkActive="active_link"
+          [routerLinkActiveOptions]="{ exact: true }">{{'header.home' |
           translate}}</a>
-        <a routerLink="/about" routerLinkActive="active_link"
+        <a [routerLink]="routes.about" routerLinkActive="active_link"
           [routerLinkActiveOptions]="{ exact: true }">{{'header.about' | translate}}</a>
-        <a routerLink="/projects" routerLinkActive="active_link"
+        <a [routerLink]="routes.projects" routerLinkActive="active_link"
           [routerLinkActiveOptions]="{ exact: true }">{{'header.projects' | translate}}</a>
-        <a routerLink="/contact" routerLinkActive="active_link"
+        <a [routerLink]="routes.contact" routerLinkActive="active_link"
           [routerLinkActiveOptions]="{ exact: true }">{{'header.contact' | translate}}</a>
       </nav>
       <div class="language_switch">
@@ -35,12 +36,11 @@
 
   <!-- Mobile dropdown -->
   <div class="mobile_menu" [class.open]="isMenuOpen">
-    <a routerLink="" (click)="closeMenu()">{{'header.home' | translate}}</a>
-    <a routerLink="/about" (click)="closeMenu()">{{'header.about' | translate}}</a>
-    <a routerLink="/projects" (click)="closeMenu()">{{'header.projects' | translate}}</a>
-    <a routerLink="/contact" (click)="closeMenu()">{{'header.contact' | translate}}</a>
-    <hr>
-    <div class="language_switch">
+    <a [routerLink]="routes.home" (click)="closeMenu()">{{'header.home' | translate}}</a>
+    <a [routerLink]="routes.about" (click)="closeMenu()">{{'header.about' | translate}}</a>
+    <a [routerLink]="routes.projects" (click)="closeMenu()">{{'header.projects' | translate}}</a>
+    <a [routerLink]="routes.contact" (click)="closeMenu()">{{'header.contact' | translate}}</a>
+        <div class="language_switch">
       @for (lang of languages; track lang) {
       <button (click)="switchLanguage(lang)" [class.active]="translate.currentLang() === lang">
         {{ lang.toUpperCase() }}

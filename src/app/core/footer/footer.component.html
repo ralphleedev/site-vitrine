@@ -19,11 +19,11 @@
         <div class="footer_main">
             <!-- Contact us -->
             <div class="footer_contact">
-                <a routerLink="/contact">{{'footer.contact' | translate}}</a>
+                <a [routerLink]="routes.contact">{{'footer.contact' | translate}}</a>
             </div>
             <!-- Legal notice -->
             <div class="footer_legal">
-                <a routerLink="/legal">{{'footer.legal' | translate}}</a>
+                <a [routerLink]="routes.legal">{{'footer.legal' | translate}}</a>
             </div>
         </div>
         <!-- Copyright -->
@@ -31,5 +31,4 @@
             <p>{{'footer.copyright' | translate}}</p>
         </div>
     </div>
-
 </footer>
