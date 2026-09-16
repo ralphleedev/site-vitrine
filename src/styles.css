@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --color-primary: #0F24E2;
@@ -7,10 +8,14 @@
 
 
   --font-family-body: 'Cabin', sans-serif;
+  --font-family-secondary: "Work Sans", sans-serif;
 
   --font-size-sm: 14px;
   --font-size-base: 16px;
   --font-size-lg: 18px;
+  --font-size-xx-lg: 40px;
+
+  --font-weight-title: 900;
 
   --header-height: 64px;
   --header-height-desktop: 72px;
@@ -28,6 +33,12 @@
 
   --footer-icon-gap: 12px;
   --footer-gap-desktop: 24px;
+
+  --section-mobile-vertical-padding: 4rem;
+  --section-mobile-horizontal-padding: 2rem;
+  --section-desktop-vertical-padding: 6rem;
+  --section-desktop-horizontal-padding: 2rem;
+
 }
 
 /* Global styles */
@@ -47,4 +58,64 @@ body {
 
 body {
   font-family: var(--font-family-body);
+}
+
+.preview__section {
+  width: 100%;
+  padding: var(--section-mobile-vertical-padding) var(--section-mobile-horizontal-padding);
+  min-height: 450px;
+}
+
+.preview__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.preview__image {
+  display: block;
+  flex-shrink: 0;
+  max-width: 327px;
+  max-height: 393px;
+}
+
+@media (min-width: 768px) {
+
+  .preview__section {
+    padding: var(--section-desktop-vertical-padding) var(--section-desktop-horizontal-padding);
+  }
+
+  .preview__container {
+    flex-direction: row;
+    max-width: 900px;
+    gap: 10rem;
+  }
+
+  .preview__content {
+    max-width: 500px;
+  }
+}
+
+.title1 {
+  font-size: var(--font-size-xx-lg);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-title);
+  margin-top: 0;
+}
+
+.title2 {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-title);
+}
+
+.body {
+  font-size: var(--font-size-base);
 }

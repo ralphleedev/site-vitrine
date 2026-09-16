@@ -1,0 +1,20 @@
+<div class="preview__section">
+    <div class="preview__container">
+        <div class="preview__content">
+            <div class="preview__text">
+                <p class="title1">{{'home.about.about' | translate}}</p>
+                <p class="title2">{{'home.about.title2' | translate}} </p>
+                <p class="body">{{'home.about.body' | translate}}</p>
+            </div>
+            <app-button [routerLink]="routes.about" variant="solid" color="primary">
+                {{'home.about.button' | translate}}
+            </app-button>
+        </div>
+        <div class="preview__image-wrapper">
+            <img class="preview__decor preview__decor--bdd" src="icons/icone-bdd.svg">
+            <img class="preview__decor preview__decor--mobile" src="icons/icone-mobile.svg">
+            <img class="preview__decor preview__decor--desktop" src="icons/icone-desktop.svg">
+            <img class="preview__image" src="images/about-preview.png">
+        </div>
+    </div>
+</div>
