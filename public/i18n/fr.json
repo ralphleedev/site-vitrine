@@ -9,5 +9,30 @@
         "contact": "Contact",
         "legal": "Mentions légales",
         "copyright": "Ralph Lee © 2026."
+    },
+    "home": {
+        "intro": {
+            "hi": "Salut, moi c'est Ralph!",
+            "role": "Développeur Full-stack",
+            "techs": "Web · Backend · Mobile",
+            "body": "Je développe des applications web, backend et Android fiables avec Angular, Java et Spring Boot, en mettant l’accent sur un code robuste et maintenable."
+        },
+        "about": {
+            "about": "À propos de moi",
+            "title2": "J’aime comprendre comment tout s’articule.",
+            "body": "Avec une expérience professionnelle en développement web, backend et Android, j’ai travaillé sur différentes facettes d’un produit SaaS en production — de la conception de fonctionnalités jusqu’aux réalités du maintien d’une application en conditions réelles.",
+            "button": "Voir plus"
+        },
+        "projects": {
+            "title1": "Projets",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque odio vitae interdum varius. Donec pulvinar nunc sed elit rhoncus pellentesque. Donec non ex et risus aliquam posuere id ut lacus. Cras commodo sodales mi sit amet cursus. Aenean vitae rutrum odio, sed feugiat est.",
+            "button": "Voir les projets"
+        },
+        "contact": {
+            "title": "Me contacter",
+            "body": "Vous avez un projet, une opportunité, ou simplement envie d’échanger ?",
+            "get-in-touch": "Contactez-moi →",
+            "availability": "Ouvert aux postes en télétravail à temps plein et aux missions freelance. Je réponds généralement sous 24 heures."
+        }
     }
 }
