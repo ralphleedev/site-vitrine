@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.main-layout__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
