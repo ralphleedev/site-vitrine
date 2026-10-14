@@ -1,20 +1,16 @@
-.preview__section {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
-}
-
 .preview__image-wrapper {
     position: relative;
     z-index: 1;
     width: calc(100% - 4rem);
     max-width: 340px;
     height: auto;
-    margin-bottom: calc(-1 * var(--section-mobile-vertical-padding));
+    margin-bottom: calc(-1 * var(--band-mobile-vertical-padding));
     margin-top: -6rem;
     margin-left: 4rem;
 }
 
 .preview__image {
+    display: block;
     height: auto;
     width: 100%;
     max-width: 318px;
@@ -53,12 +49,12 @@
 
 @media (min-width: 768px) {
 
-    .preview__container {
+    .band__container {
         flex-direction: row-reverse;
     }
 
     .preview__image-wrapper {
-        margin-bottom: calc(-1 * var(--section-desktop-vertical-padding));
+        margin-bottom: calc(-1 * var(--band-desktop-vertical-padding));
         width: fit-content;
         margin-top: 0;
         margin-left: 0;

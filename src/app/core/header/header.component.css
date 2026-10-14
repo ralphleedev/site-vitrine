@@ -5,7 +5,6 @@
 .header {
   width: 100%;
   height: var(--header-height);
-  background: var(--color-primary);
 }
 
 .container {
@@ -36,7 +35,6 @@
   padding: 0;
   border: none;
   background: none;
-  color: var(--color-white);
   cursor: pointer;
   display: flex;
   align-items: center;

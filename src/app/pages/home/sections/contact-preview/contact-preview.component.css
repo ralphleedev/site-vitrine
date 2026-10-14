@@ -1,8 +1,3 @@
-.preview__section {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
 .preview__image-wrapper {
     padding-bottom: 1.5rem;
 }
@@ -13,10 +8,6 @@
 }
 
 @media (min-width: 768px) {
-
-    .preview__container {
-        flex-direction: row;
-    }
 
     .preview__image-wrapper {
         padding-bottom: 0;

@@ -34,10 +34,10 @@
   --footer-icon-gap: 12px;
   --footer-gap-desktop: 24px;
 
-  --section-mobile-vertical-padding: 4rem;
-  --section-mobile-horizontal-padding: 2rem;
-  --section-desktop-vertical-padding: 6rem;
-  --section-desktop-horizontal-padding: 2rem;
+  --band-mobile-vertical-padding: 4rem;
+  --band-mobile-horizontal-padding: 2rem;
+  --band-desktop-vertical-padding: 6rem;
+  --band-desktop-horizontal-padding: 2rem;
 
 }
 
@@ -60,17 +60,49 @@ body {
   font-family: var(--font-family-body);
 }
 
-.preview__section {
-  width: 100%;
-  padding: var(--section-mobile-vertical-padding) var(--section-mobile-horizontal-padding);
-  min-height: 450px;
+.theme-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
-.preview__container {
+.theme-light {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.theme-white {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Routed pages: fill <main> so a band--fill can stretch */
+main > router-outlet + * {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.band {
+  width: 100%;
+  padding: var(--band-mobile-vertical-padding) var(--band-mobile-horizontal-padding);
+}
+
+.band--fill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.band__container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.preview__section {
+  min-height: 450px;
 }
 
 .preview__content {
@@ -79,23 +111,20 @@ body {
   gap: 3rem;
 }
 
-.preview__image {
-  display: block;
-  flex-shrink: 0;
-  max-width: 327px;
-  max-height: 393px;
-}
-
 @media (min-width: 768px) {
 
-  .preview__section {
-    padding: var(--section-desktop-vertical-padding) var(--section-desktop-horizontal-padding);
+  .band {
+    padding: var(--band-desktop-vertical-padding) var(--band-desktop-horizontal-padding);
   }
 
-  .preview__container {
+  .band__container {
     flex-direction: row;
     max-width: 900px;
     gap: 10rem;
+  }
+
+  .band__container--reverse {
+    flex-direction: row-reverse;
   }
 
   .preview__content {
