@@ -1,0 +1,65 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form__label {
+  font-family: var(--font-family-secondary);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+
+.contact-form__input {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  background: var(--color-white);
+}
+
+.contact-form__input:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+.contact-form__textarea {
+  resize: vertical;
+}
+
+.contact-form__error {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: #b00020;
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+}
+
+.contact-form__feedback {
+  margin: 0;
+  font-size: var(--font-size-base);
+}
+
+.contact-form__feedback--success { color: #1b7f3b; }
+.contact-form__feedback--error { color: #b00020; }
+
+/* Off-screen rather than display:none, which some bots detect */
+.contact-form__honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-form__scrollbar {
+  resize: vertical;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}

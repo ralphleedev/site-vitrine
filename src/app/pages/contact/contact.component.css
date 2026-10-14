@@ -1,0 +1,38 @@
+.contact__container {
+  gap: 1rem;
+}
+
+.contact__image {
+  width: 45%;
+  display: block;
+  max-width: 327px;
+  max-height: 393px;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+
+  .contact__container {
+    gap: 10rem;
+  }
+
+  .contact__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact__image {
+  width: auto;
+  }
+
+  .contact__content {
+    flex: 1;
+    max-width: 500px;
+  }
+}

@@ -34,5 +34,28 @@
             "get-in-touch": "Let’s get in touch →",
             "availability": " Open to full-time remote roles and freelance work. I usually reply within a day."
         }
+    },
+    "contact": {
+        "title": "Get in touch",
+        "body": "Have a project, an opportunity, or just want to talk? Send me a message.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Send message",
+            "sending": "Sending",
+            "errors": {
+                "required": "Please fill in this field.",
+                "email": "That doesn't look like a valid email address.",
+                "too-short": "That's a bit short. Could you add a few more details?",
+                "too-long": "That's too long. Please shorten it a little.",
+                "invalid": "Please check this field."
+            }
+        },
+        "confirmation": {
+            "title": "Message sent!",
+            "body": "Thanks for your message. I'll get back to you as soon as I can.",
+            "action": "Send another message"
+        }
     }
 }

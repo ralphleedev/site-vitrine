@@ -1,0 +1,66 @@
+@if(status() === 'success' ) {
+<app-contact-confirmation (newMessage)="startNewMessage()" />
+} @else {
+<form class="contact-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+
+    <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-name">
+            {{ 'contact.form.name' | translate }}
+        </label>
+        @let nameError = errorFor('name');
+        <input class="contact-form__input" id="contact-name" type="text" formControlName="name" autocomplete="name"
+            [attr.aria-invalid]="isInvalid('name')"
+            [attr.aria-describedby]="isInvalid('name') ? 'contact-name-error' : null" />
+        @if (nameError) {
+        <p class="contact-form__error" id="contact-name-error" role="alert">
+            {{ nameError | translate }}
+        </p>
+        }
+    </div>
+
+    <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-email">
+            {{ 'contact.form.email' | translate }}
+        </label>
+        @let mailError = errorFor('email');
+        <input class="contact-form__input" id="contact-email" type="email" formControlName="email" autocomplete="email"
+            [attr.aria-invalid]="isInvalid('email')"
+            [attr.aria-describedby]="isInvalid('email') ? 'contact-email-error' : null" />
+        @if (mailError) {
+        <p class="contact-form__error" id="contact-email-error" role="alert">
+            {{ mailError | translate }}
+        </p>
+        }
+    </div>
+
+    <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-message">
+            {{ 'contact.form.message' | translate }}
+        </label>
+        @let mssgError = errorFor('message');
+        <textarea class="contact-form__input contact-form__textarea contact-form__scrollbar" id="contact-message" rows="6"
+            formControlName="message" [attr.aria-invalid]="isInvalid('message')"
+            [attr.aria-describedby]="isInvalid('message') ? 'contact-message-error' : null"></textarea>
+        @if (mssgError) {
+        <p class="contact-form__error" id="contact-message-error" role="alert">
+            {{ mssgError| translate }}
+        </p>
+        }
+    </div>
+
+    <!-- Honeypot: hidden from real users, bots tend to fill it -->
+    <input class="contact-form__honeypot" type="text" formControlName="website" tabindex="-1" autocomplete="off"
+        aria-hidden="true" />
+
+    <app-button class="contact-form__submit" type="submit" [disabled]="form.invalid || status() === 'sending'">
+        {{ (status() === 'sending' ? 'contact.form.sending' : 'contact.form.submit') | translate }}
+    </app-button>
+
+
+    @if (status() === 'error') {
+    <p class="contact-form__feedback contact-form__feedback--error" role="alert">
+        {{ 'contact.form.error' | translate }}
+    </p>
+    }
+</form>
+}

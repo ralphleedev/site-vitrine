@@ -34,5 +34,28 @@
             "get-in-touch": "Contactez-moi →",
             "availability": "Ouvert aux postes en télétravail à temps plein et aux missions freelance. Je réponds généralement sous 24 heures."
         }
+    },
+    "contact": {
+        "title": "Me contacter",
+        "body": "Vous avez un projet, une opportunité ou simplement envie d’échanger ? Envoyez-moi un message.",
+        "form": {
+            "name": "Nom",
+            "email": "E-mail",
+            "message": "Message",
+            "submit": "Envoyer le message",
+            "sending": "Envoi",
+            "errors": {
+                "required": "Veuillez remplir ce champ.",
+                "email": "Cette adresse e-mail ne semble pas valide.",
+                "too-short": "Ce message est un peu court. Pourriez-vous ajouter quelques détails ?",
+                "too-long": "Ce message est trop long. Veuillez le raccourcir un peu.",
+                "invalid": "Veuillez vérifier ce champ."
+            }
+        },
+        "confirmation": {
+            "title": "Message envoyé !",
+            "body": "Merci pour votre message. Je reviendrai vers vous dès que possible.",
+            "action": "Renvoyer un message"
+        }
     }
 }
