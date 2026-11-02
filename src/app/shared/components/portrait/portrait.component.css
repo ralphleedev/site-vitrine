@@ -1,0 +1,83 @@
+:host {
+    display: block;
+    max-width: 340px;
+}
+
+.portrait {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.portrait__image {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 318px;
+}
+
+.portrait__decor {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 40px;
+}
+
+.portrait__decor--bdd {
+    top: 26%;
+    right: 4%;
+    width: 12%;
+    transform: rotate(-30deg);
+}
+
+.portrait__decor--mobile {
+    top: 50%;
+    right: -6%;
+    width: 10%;
+    transform: rotate(30deg);
+}
+
+.portrait__decor--desktop {
+    top: 65%;
+    right: 15%;
+    width: 18%;
+    max-width: 50px;
+    transform: rotate(20deg);
+}
+
+@media (min-width: 768px) {
+        
+    .portrait__image {
+        width: auto;
+        max-height: 380px;
+        max-width: 460px;
+    }
+
+    .portrait__decor {
+        max-width: none;
+    }
+
+    .portrait__decor--bdd {
+        top: -13%;
+        left: 0%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .portrait__decor--mobile {
+        top: 0%;
+        left: 20%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .portrait__decor--desktop {
+        top: 20%;
+        left: 3%;
+        width: 60px;
+        height: 60px;
+    }
+}
