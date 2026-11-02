@@ -33,6 +33,12 @@
 
   --footer-icon-gap: 12px;
   --footer-gap-desktop: 24px;
+  --footer-brand-gap: 1rem;
+
+  --logo-height: 2.5rem;
+  --logo-height-footer: 2rem;
+  --logo-height-desktop: 3rem;
+  --logo-height-footer-desktop: 2.5rem;
 
   --band-mobile-vertical-padding: 4rem;
   --band-mobile-horizontal-padding: 2rem;

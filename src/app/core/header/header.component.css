@@ -20,8 +20,14 @@
    ======================================== */
 
 .logo {
-  font-size: 18px;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo__image {
+  display: block;
+  height: var(--logo-height);
+  width: auto;
 }
 
 
@@ -177,6 +183,10 @@ html:has(.mobile_menu.open) {
   .header {
     height: var(--header-height-desktop);
     font-size: var(--font-size-base)
+  }
+
+  .logo__image {
+    height: var(--logo-height-desktop);
   }
 
   .header_controls {

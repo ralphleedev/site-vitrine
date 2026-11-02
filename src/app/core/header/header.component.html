@@ -2,9 +2,9 @@
   <div class="container">
 
     <!-- Logo -->
-    <div class="logo">
-      MyLogo
-    </div>
+    <a class="logo" routerLink="/" aria-label="Home">
+      <img class="logo__image" src="images/logo-ralph.svg" alt="Ralph">
+    </a>
 
     <!-- Desktop header control -->
     <div class="header_controls">
@@ -40,7 +40,7 @@
     <a [routerLink]="routes.about" (click)="closeMenu()">{{'header.about' | translate}}</a>
     <a [routerLink]="routes.projects" (click)="closeMenu()">{{'header.projects' | translate}}</a>
     <a [routerLink]="routes.contact" (click)="closeMenu()">{{'header.contact' | translate}}</a>
-        <div class="language_switch">
+    <div class="language_switch">
       @for (lang of languages; track lang) {
       <button (click)="switchLanguage(lang)" [class.active]="translate.currentLang() === lang">
         {{ lang.toUpperCase() }}
