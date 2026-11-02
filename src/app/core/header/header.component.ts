@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, DestroyRef, DOCUMENT, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Language } from '../../shared/enums/language.enums';
@@ -13,29 +13,37 @@ import { AppRoutes } from '../../shared/constants/route-segments';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+  private readonly document = inject(DOCUMENT);
+  isMenuOpen = false;
 
   readonly languages = Object.values(Language);
   routes = AppRoutes;
 
-  isMenuOpen = false;
-
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService) {
+    inject(DestroyRef).onDestroy(() => this.setMenuOpen(false));
+  }
 
   switchLanguage(lang: Language) {
     this.translate.use(lang);
   }
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+    this.setMenuOpen(!this.isMenuOpen);
   }
 
   closeMenu() {
-    this.isMenuOpen = false;
+    this.setMenuOpen(false);
   }
 
   get menuIcon(): string {
     return this.isMenuOpen
       ? 'icons/menu-close.svg'
       : 'icons/menu-hamburger.svg';
+  }
+
+  private setMenuOpen(open: boolean) {
+    this.isMenuOpen = open;
+    if (this.isMenuOpen) window.scrollTo(0, 0);
+    this.document.body.classList.toggle('no-scroll', open);
   }
 }

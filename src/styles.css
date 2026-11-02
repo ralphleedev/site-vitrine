@@ -60,6 +60,10 @@ body {
   font-family: var(--font-family-body);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .theme-primary {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -76,7 +80,7 @@ body {
 }
 
 /* Routed pages: fill <main> so a band--fill can stretch */
-main > router-outlet + * {
+main>router-outlet+* {
   display: flex;
   flex-direction: column;
   flex: 1;
