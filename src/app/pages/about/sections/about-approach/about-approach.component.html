@@ -1,0 +1,10 @@
+<div class="band theme-white">
+    <div class="band__container band__container--stacked">
+        <p class="title1">{{'about.approach.title' | translate}}</p>
+        <div class="principles">
+            @for(principle of principles; track principle.title) {
+            <app-principle-card class="card theme-light" [principle]="principle"></app-principle-card>
+            }
+        </div>
+    </div>
+</div>

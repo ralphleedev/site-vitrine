@@ -45,6 +45,9 @@
   --band-desktop-vertical-padding: 6rem;
   --band-desktop-horizontal-padding: 2rem;
 
+  --color-shadow: rgba(0, 0, 0, 0.25);
+
+  --vertical-gap: 3rem;
 }
 
 /* Global styles */
@@ -111,14 +114,34 @@ main>router-outlet+* {
   flex-direction: column;
 }
 
-.preview__section {
+.band__container--centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.band__content {
+  max-width: 500px;
+}
+
+.band__button {
+  display: block;
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+.band--section {
   min-height: 450px;
 }
 
-.preview__content {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px 24px var(--color-shadow);
+}
+
+.text-align--center {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -130,15 +153,16 @@ main>router-outlet+* {
   .band__container {
     flex-direction: row;
     max-width: 900px;
-    gap: 10rem;
+    gap: min(10rem, 8%);
+  }
+
+  .band__container--stacked {
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .band__container--reverse {
     flex-direction: row-reverse;
-  }
-
-  .preview__content {
-    max-width: 500px;
   }
 }
 

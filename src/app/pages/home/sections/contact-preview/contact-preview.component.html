@@ -1,15 +1,13 @@
-<div class="preview__section band theme-primary">
+<div class="band band--section theme-primary">
     <div class="band__container band__container--reverse">
-        <div class="preview__image-wrapper">
-            <img class="preview__image" src="icons/icone-contact.svg" alt="">
+        <div class="image-wrapper">
+            <img class="image" src="icons/icone-contact.svg" alt="">
         </div>
-        <div class="preview__content">
-            <div class="preview__text">
-                <p class="title1">{{'home.contact.title' | translate }}</p>
-                <p class="body">{{'home.contact.body' | translate }}</p>
-                <p class="body">{{'home.contact.availability' | translate }}</p>
-            </div>
-            <app-button [routerLink]="routes.contact" color="secondary">
+        <div class="band__content">
+            <p class="title1">{{'home.contact.title' | translate }}</p>
+            <p class="body">{{'home.contact.body' | translate }}</p>
+            <p class="body">{{'home.contact.availability' | translate }}</p>
+            <app-button class="band__button" [routerLink]="routes.contact" color="secondary">
                 {{'home.contact.get-in-touch' | translate}}
             </app-button>
         </div>

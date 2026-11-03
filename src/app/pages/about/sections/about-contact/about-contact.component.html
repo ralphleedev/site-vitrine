@@ -1,0 +1,21 @@
+<div class="band theme-light">
+    <div class="band__container band__container--stacked band__container--centered text-align--center">
+        <div class="band__content">
+            <p class="title1">{{'about.contact.title' | translate}}</p>
+            <p class="body">{{'about.contact.body' | translate}}</p>
+            <p class="title2">{{'about.contact.title2' | translate}}</p>
+        </div>
+        <div class="button-group">
+            <app-button class="button-group__item--wide" [routerLink]="routes.contact" variant="solid" color="primary">
+                {{'home.contact.get-in-touch' | translate }}
+            </app-button>
+            <app-button class="button-group__item" [routerLink]="routes.projects" variant="solid" color="primary">
+                {{'home.projects.button' | translate }}
+            </app-button>
+            <app-button class="button-group__item" [href]="'about.contact.cv-file' | translate"
+                download="CV-Ralph-Lee.pdf" variant="solid" color="primary">
+                {{ 'about.contact.cv-button' | translate }}
+            </app-button>
+        </div>
+    </div>
+</div>

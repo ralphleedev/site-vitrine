@@ -1,12 +1,10 @@
-<div class=" preview__section band theme-light">
+<div class="band band--section theme-light">
     <div class="band__container">
-        <div class="preview__content">
-            <div class="preview__text">
-                <p class="title1">{{'home.about.about' | translate}}</p>
-                <p class="title2">{{'home.about.title2' | translate}} </p>
-                <p class="body">{{'home.about.body' | translate}}</p>
-            </div>
-            <app-button [routerLink]="routes.about" variant="solid" color="primary">
+        <div class="band__content">
+            <p class="title1">{{'home.about.about' | translate}}</p>
+            <p class="title2">{{'home.about.title2' | translate}} </p>
+            <p class="body">{{'home.about.body' | translate}}</p>
+            <app-button class="band__button" [routerLink]="routes.about" variant="solid" color="primary">
                 {{'home.about.button' | translate}}
             </app-button>
         </div>

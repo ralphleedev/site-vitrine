@@ -1,0 +1,8 @@
+.skills__groups {
+  display: grid;
+  gap: var(--vertical-gap);
+}
+
+@media (min-width: 768px) {
+  .skills__groups { grid-template-columns: repeat(3, 1fr); }
+}

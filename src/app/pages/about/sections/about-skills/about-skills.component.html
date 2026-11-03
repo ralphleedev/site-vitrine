@@ -1,0 +1,10 @@
+<div class="band theme-light">
+    <div class="band__container band__container--stacked">
+        <p class="title1">{{'about.skills.title' | translate}}</p>
+        <div class="skills__groups">
+            @for (group of groups; track group.title) {
+            <app-skill-group class="card theme-white" [title]="group.title" [icon]="group.icon" [skills]="group.skills" />
+            }
+        </div>
+    </div>
+</div>

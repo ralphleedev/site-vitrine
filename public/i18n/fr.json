@@ -57,5 +57,53 @@
             "body": "Merci pour votre message. Je reviendrai vers vous dès que possible.",
             "action": "Renvoyer un message"
         }
+    },
+    "about": {
+        "intro": {
+            "title": "De l’interface à l’infrastructure.",
+            "body": "Développeur full-stack, j’aime comprendre les choses dans leur ensemble. De la création d’interfaces au développement de systèmes backend et d’applications mobiles, j’aime transformer des problèmes complexes en logiciels fiables, cohérents et conçus pour durer."
+        },
+        "skills": {
+            "title": "Ma Stack",
+            "backend": "Backend",
+            "web": "Web",
+            "mobile": "Mobile"
+        },
+        "approach": {
+            "title": "Ma façon de développer",
+            "example-title": "EN PRATIQUE",
+            "principle1": {
+                "title": "Décomposer la complexité",
+                "description": "J'aime comprendre la logique d'un problème avant de me lancer dans son implémentation. Une fonctionnalité complexe devient plus facile à appréhender lorsque ses différentes responsabilités et règles sont clairement séparées.",
+                "example": "Chez SIGSCAN, j'ai travaillé sur un moteur d'alertes impliquant des règles métier et plusieurs composants du système. J'ai abordé cette fonctionnalité en décomposant la logique en éléments plus petits et réutilisables, plutôt qu'en construisant un bloc de code monolithique."
+            },
+            "principle2": {
+                "title": "Améliorer l'existant",
+                "description": "Tous les problèmes ne nécessitent pas une nouvelle fonctionnalité ou une couche d'abstraction supplémentaire. Parfois, la meilleure solution consiste simplement à simplifier l'existant pour faciliter les évolutions futures.",
+                "example": "Sur le frontend Angular, j'ai refactorisé du code existant et simplifié des éléments d'interface récurrents, afin de rendre le code plus lisible et plus facile à faire évoluer."
+            },
+            "principle3": {
+                "title": "Tenir compte du terrain",
+                "description": "Un logiciel ne fonctionne jamais de manière isolée. Les appareils, les bibliothèques externes et les systèmes existants ont leurs propres contraintes, dont il faut tenir compte dès la conception.",
+                "example": "Sur l'application Android de gestion des inventaires, j'ai travaillé avec des lecteurs RFID Zebra et leur SDK, en intégrant les fonctionnalités propres aux appareils directement dans l'application."
+            },
+            "principle4": {
+                "title": "Penser au-delà du code",
+                "description": "Une fonctionnalité doit être cohérente pour la personne qui l'utilise, et pas seulement fonctionner sur le plan technique. J'accorde de l'importance à la clarté des interfaces et à leur adéquation avec les besoins réels.",
+                "example": "Avec Angular, j'ai développé des interfaces à partir de maquettes Figma, en intégrant des mises en page responsives, des formulaires et de la navigation, tout en les reliant à la logique métier et à la gestion des droits d'accès."
+            }
+        },
+        "beyond-code": {
+            "title": "Au-delà du code",
+            "paragraph1": "Je suis curieux du monde qui m'entoure, bien au-delà des écrans. Issu d'une formation en relations internationales, j'aime découvrir d'autres cultures, explorer des endroits hors des sentiers battus et me plonger dans l'histoire. J'aime comprendre comment les choses se sont construites et ont évolué, qu'il s'agisse d'un logiciel, d'un site historique ou d'une société.",
+            "paragraph2": "Cette curiosité se retrouve aussi dans ma façon de développer : chercher à comprendre avant de foncer, remettre les évidences en question et toujours garder une vision d'ensemble."
+        },
+        "contact": {
+            "title": "Construisons quelque chose d'utile.",
+            "body": "Je cherche ma prochaine opportunité pour créer des logiciels bien conçus et fiables au sein d'une bonne équipe. Ouvert aux postes à temps plein en télétravail depuis la France et à quelques missions freelance.",
+            "title2": "Un projet en tête ? Parlons-en.",
+            "cv-button": "Télécharger mon CV ↓",
+            "cv-file": "cvs/cv-fr.pdf"
+        }
     }
 }

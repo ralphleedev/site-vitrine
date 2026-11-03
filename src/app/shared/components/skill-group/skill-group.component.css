@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+
+.skill-group__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.skill-group__main-icon {
+  height: 5rem;
+  width: auto;
+  flex-shrink: 0;
+  margin-bottom: -2.5rem;
+}
+
+.skill-group__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-group__item--main .skill-group__name {
+  font-weight: 700;
+}
+
+.skill-group__detail {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}

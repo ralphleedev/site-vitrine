@@ -1,0 +1,17 @@
+.beyond-code__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .beyond-code__image {
+    flex: 0 0 320px;
+    width: 320px;
+    aspect-ratio: 1/1;
+    align-self: center;
+  }
+}

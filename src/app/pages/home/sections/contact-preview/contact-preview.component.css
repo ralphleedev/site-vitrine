@@ -1,19 +1,19 @@
-.preview__image-wrapper {
+.image-wrapper {
     padding-bottom: 1.5rem;
 }
 
-.preview__image {
+.image {
     width: 45%;
     max-width: 186px;
 }
 
 @media (min-width: 768px) {
 
-    .preview__image-wrapper {
+    .image-wrapper {
         padding-bottom: 0;
     }
 
-    .preview__image {
+    .image {
         width: auto;
         max-height: 380px;
         max-width: 460px;

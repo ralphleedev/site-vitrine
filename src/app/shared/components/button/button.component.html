@@ -11,6 +11,10 @@
 <a [class]="classes" [routerLink]="routerLink">
     <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
 </a>
+} @else if (href) {
+<a [class]="classes" [href]="href" [attr.download]="download">
+    <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
+</a>
 } @else {
 <button [class]="classes" [disabled]="disabled" [type]="type">
     <ng-container *ngTemplateOutlet="contentTpl"></ng-container>

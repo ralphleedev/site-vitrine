@@ -57,5 +57,53 @@
             "body": "Thanks for your message. I'll get back to you as soon as I can.",
             "action": "Send another message"
         }
+    },
+    "about": {
+        "intro": {
+            "title": "From interface to infrastructure.",
+            "body": "I’m a full-stack developer who likes seeing the whole picture. From crafting interfaces to building backend systems and mobile apps, I enjoy turning complex problems into software that works, makes sense, and stands the test of time."
+        },
+        "skills": {
+            "title": "What I work with",
+            "backend": "Backend",
+            "web": "Web",
+            "mobile": "Mobile"
+        },
+        "approach": {
+            "title": "How I approach development",
+            "example-title": "IN PRINCIPLE",
+            "principle1": {
+                "title": "Break down complexity",
+                "description": "I prefer to understand the underlying logic before jumping into implementation. Complex features become easier to reason about when their responsibilities and rules are clearly separated.",
+                "example": "At SIGSCAN, I worked on an alert engine involving business rules and multiple system components. I approached the feature by breaking the logic into smaller, reusable parts rather than treating it as one large block of code."
+            },
+            "principle2": {
+                "title": "Improve what exists",
+                "description": "Not every problem needs a new feature or another layer of abstraction. Sometimes the best solution is to simplify what's already there and make future changes less painful.",
+                "example": "In the Angular frontend, I refactored existing code and simplified repeated UI patterns, making the codebase easier to understand and work with."
+            },
+            "principle3": {
+                "title": "Account for the real world",
+                "description": "Software doesn't exist in isolation. Devices, external libraries and existing systems all have their own constraints, and the implementation needs to account for them.",
+                "example": "In the Android inventory app, I worked with Zebra RFID hardware and its SDK, integrating device-level functionality into the application rather than treating it as a purely software problem."
+            },
+            "principle4": {
+                "title": "Think beyond the code",
+                "description": "A feature needs to make sense to the person using it, not just work technically. I value clear interfaces and making sure the implementation reflects the actual requirements.",
+                "example": "Working with Angular, I implemented interfaces from Figma designs, including responsive layouts, forms and navigation, while integrating them with application logic and access permissions."
+            }
+        },
+        "beyond-code": {
+            "title" : "Beyond the code",
+            "paragraph1": "I'm curious about the world beyond the screen. With a background in international politics, I enjoy exploring different cultures, discovering places off the beaten path, and diving into history. I like understanding how things came to be — whether that's a piece of software, a historical site, or a society.",
+            "paragraph2": "That curiosity is part of what I bring to development: a willingness to look beyond the obvious, ask questions, and understand the bigger picture."
+        },
+        "contact" : {
+            "title":"Let's build something useful.",
+            "body": "I'm looking for my next opportunity to build thoughtful, reliable software with a good team. Open to full-time remote roles from France and selected freelance projects.",
+            "title2": "Have something in mind? Let's talk.",
+            "cv-button": "Download my resume ↓",
+            "cv-file": "cvs/cv-en.pdf"
+        }
     }
 }

@@ -1,0 +1,19 @@
+<article class="skill-group">
+    <div class="skill-group__header">
+        <p class="title2">{{ title() | translate }}</p>
+        <img [src]="icon()" class="skill-group__main-icon">
+    </div>
+    <ul class="skill-group__list">
+        @for (skill of skills(); track skill.name) {
+        <li class="skill-group__item" [class.skill-group__item--main]="skill.level === 'main'">
+            <span class="skill-group__name">{{ skill.name }}</span>
+            @if (skill.detail) {
+            <span class="skill-group__detail">{{ skill.detail | translate }}</span>
+            }
+            @if(skill.logo) {
+            <img class="skill-group__logo" src="skill.logo">
+            }
+        </li>
+        }
+    </ul>
+</article>

@@ -21,6 +21,8 @@ export class ButtonComponent {
   @Input() disabled = false;
   @Input() type: 'button' | 'submit' = 'button';
   @Input() routerLink?: AppRoute;
+  @Input() href?: string;
+  @Input() download?: string;
 
   get classes() {
     return `btn btn--${this.variant} btn--${this.color} btn--${this.size}`;

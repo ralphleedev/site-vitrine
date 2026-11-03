@@ -1,0 +1,11 @@
+.principles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--vertical-gap);
+}
+
+@media (min-width: 768px) {
+    .principles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

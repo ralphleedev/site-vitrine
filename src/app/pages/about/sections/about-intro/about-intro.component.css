@@ -1,0 +1,25 @@
+.about__portrait {
+    position: relative;
+    z-index: 1;
+    width: calc(100% - 4rem);
+    max-width: 340px;
+    height: auto;
+    margin-bottom: calc(-1 * var(--band-mobile-vertical-padding));
+    margin-top: -2rem;
+    margin-left: 4rem;
+}
+
+.title1 {
+    font-size: clamp(1.75rem, 8vw, 3rem);
+}
+
+@media (min-width: 768px) {
+
+    .about__portrait {
+        margin-bottom: calc(-1 * var(--band-desktop-vertical-padding));
+        width: fit-content;
+        margin-top: 0;
+        margin-left: 0;
+        align-self: flex-end;
+    }
+}
