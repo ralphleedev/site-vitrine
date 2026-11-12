@@ -50,7 +50,9 @@
                 "too-short": "That's a bit short. Could you add a few more details?",
                 "too-long": "That's too long. Please shorten it a little.",
                 "invalid": "Please check this field."
-            }
+            },
+            "contact-notice": "The information you submit is used solely to respond to your message. For more information, please read our",
+            "contact-notice-link": "legal notice"
         },
         "confirmation": {
             "title": "Message sent!",
@@ -94,16 +96,48 @@
             }
         },
         "beyond-code": {
-            "title" : "Beyond the code",
+            "title": "Beyond the code",
             "paragraph1": "I'm curious about the world beyond the screen. With a background in international politics, I enjoy exploring different cultures, discovering places off the beaten path, and diving into history. I like understanding how things came to be — whether that's a piece of software, a historical site, or a society.",
             "paragraph2": "That curiosity is part of what I bring to development: a willingness to look beyond the obvious, ask questions, and understand the bigger picture."
         },
-        "contact" : {
-            "title":"Let's build something useful.",
+        "contact": {
+            "title": "Let's build something useful.",
             "body": "I'm looking for my next opportunity to build thoughtful, reliable software with a good team. Open to full-time remote roles from France and selected freelance projects.",
             "title2": "Have something in mind? Let's talk.",
             "cv-button": "Download my resume ↓",
             "cv-file": "cvs/cv-en.pdf"
+        }
+    },
+    "legal": {
+        "title": "Legal notice",
+        "last-updated": "Last updated: November 12, 2026",
+        "publisher": {
+            "title": "Website Publisher",
+            "name": "Ralph Lee"
+        },
+        "hosting": {
+            "title": "Hosting",
+            "company": "GitHub, Inc.",
+            "address": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States",
+            "website": "https://pages.github.com/"
+        },
+        "intellectual-property": {
+            "title": "Intellectual Property",
+            "body": "The original content on this website (including text, visuals and creative works) is protected by intellectual property law. Any reproduction without prior permission is prohibited, except where permitted by law."
+        },
+        "personal-data": {
+            "title": "Personal Data",
+            "body": "The contact form collects the information necessary to respond to messages (name, email address and message content).",
+            "processing": "This data is processed on the basis of the publisher's legitimate interest, used solely to respond to enquiries, and accessible to the publisher and Formspree, the form processing provider.",
+            "retention": "Data is retained for a maximum of 12 months after the last exchange, after which it is deleted.",
+            "transfers": "Formspree may process data in the United States. Relevant international transfers are governed by Standard Contractual Clauses.",
+            "rights": "You may request access to, correction or deletion of your personal data, or object to its processing, by using the contact form on this website.",
+            "complaints": "You may also lodge a complaint with the CNIL (French Data Protection Authority).",
+            "cnil-url": "https://www.cnil.fr/"
+        },
+        "cookies": {
+            "title": "Cookies",
+            "body": "This website does not use advertising cookies or audience measurement tools."
         }
     }
 }

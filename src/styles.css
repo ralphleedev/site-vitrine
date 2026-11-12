@@ -156,6 +156,10 @@ main>router-outlet+* {
     gap: min(10rem, 8%);
   }
 
+  .band__container--vertical {
+    flex-direction: column;
+  }
+
   .band__container--stacked {
     flex-direction: column;
     gap: 2rem;

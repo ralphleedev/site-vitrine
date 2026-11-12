@@ -4,6 +4,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { ContactService } from '../contact.service';
 import { ContactConfirmationComponent } from '../contact-confirmation/contact-confirmation.component';
 import { ButtonComponent } from '../../../shared/components/button/button.component';
+import { RouterLink } from '@angular/router';
+import { AppRoutes } from '../../../shared/constants/route-segments';
 
 type SubmitStatus = 'idle' | 'sending' | 'success' | 'error';
 type ContactField = 'name' | 'email' | 'message';
@@ -21,7 +23,7 @@ const ERROR_KEYS: Record<string, string> = {
 
 @Component({
   selector: 'app-contact-form',
-  imports: [ReactiveFormsModule, TranslatePipe, ContactConfirmationComponent, ButtonComponent],
+  imports: [ReactiveFormsModule, TranslatePipe, ContactConfirmationComponent, ButtonComponent, RouterLink],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -32,6 +34,8 @@ export class ContactFormComponent {
   private readonly contactService = inject(ContactService);
 
   readonly status = signal<SubmitStatus>('idle');
+
+  readonly routes = AppRoutes;
 
   readonly form = this.fb.group({
     name: ['', [Validators.required, Validators.maxLength(100)]],

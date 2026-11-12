@@ -38,8 +38,8 @@
             {{ 'contact.form.message' | translate }}
         </label>
         @let mssgError = errorFor('message');
-        <textarea class="contact-form__input contact-form__textarea contact-form__scrollbar" id="contact-message" rows="6"
-            formControlName="message" [attr.aria-invalid]="isInvalid('message')"
+        <textarea class="contact-form__input contact-form__textarea contact-form__scrollbar" id="contact-message"
+            rows="6" formControlName="message" [attr.aria-invalid]="isInvalid('message')"
             [attr.aria-describedby]="isInvalid('message') ? 'contact-message-error' : null"></textarea>
         @if (mssgError) {
         <p class="contact-form__error" id="contact-message-error" role="alert">
@@ -51,6 +51,12 @@
     <!-- Honeypot: hidden from real users, bots tend to fill it -->
     <input class="contact-form__honeypot" type="text" formControlName="website" tabindex="-1" autocomplete="off"
         aria-hidden="true" />
+
+    <p class="contact-form__notice">
+        {{ 'contact.form.contact-notice' | translate }}
+        <a class="contact-form__notice-link" [routerLink]="routes.legal" target="_blank" rel="noopener">
+            {{'contact.form.contact-notice-link' | translate }}</a>.
+    </p>
 
     <app-button class="contact-form__submit" type="submit" [disabled]="form.invalid || status() === 'sending'">
         {{ (status() === 'sending' ? 'contact.form.sending' : 'contact.form.submit') | translate }}

@@ -1,0 +1,50 @@
+<section class="band theme-white">
+    <div class="band__container band__container--vertical">
+        <article class="legal__section">
+            <p class="title1 legal__title1">{{ 'legal.title' | translate }}</p>
+            <p class="legal__updated">{{ 'legal.last-updated' | translate }}</p>
+        </article>
+
+        <article class="legal__section">
+            <h2 class="legal__heading">{{ 'legal.publisher.title' | translate }}</h2>
+            <p class="legal__text">{{ 'legal.publisher.name' | translate }}</p>
+        </article>
+
+        <article class="legal__section">
+            <h2 class="legal__heading">{{ 'legal.hosting.title' | translate }}</h2>
+            <p class="legal__text">{{ 'legal.hosting.company' | translate }}</p>
+            <p class="legal__text">{{ 'legal.hosting.address' | translate }}</p>
+            <p class="legal__text">
+                <a class="legal__link" [href]="'legal.hosting.website' | translate" target="_blank" rel="noopener">
+                    {{ 'legal.hosting.website' | translate }}
+                </a>
+            </p>
+        </article>
+
+        <article class="legal__section">
+            <h2 class="legal__heading">{{ 'legal.intellectual-property.title' | translate }}</h2>
+            <p class="legal__text">{{ 'legal.intellectual-property.body' | translate }}</p>
+        </article>
+
+        <article class="legal__section">
+            <h2 class="legal__heading">{{ 'legal.personal-data.title' | translate }}</h2>
+            <p class="legal__text">{{ 'legal.personal-data.body' | translate }}</p>
+            <p class="legal__text">{{ 'legal.personal-data.processing' | translate }}</p>
+            <p class="legal__text">{{ 'legal.personal-data.retention' | translate }}</p>
+            <p class="legal__text">{{ 'legal.personal-data.transfers' | translate }}</p>
+            <p class="legal__text">{{ 'legal.personal-data.rights' | translate }}</p>
+            <p class="legal__text">
+                {{ 'legal.personal-data.complaints' | translate }}
+                <a class="legal__link" [href]="'legal.personal-data.cnil-url' | translate" target="_blank"
+                    rel="noopener">
+                    {{ 'legal.personal-data.cnil-url' | translate }}
+                </a>
+            </p>
+        </article>
+
+        <article class="legal__section">
+            <h2 class="legal__heading">{{ 'legal.cookies.title' | translate }}</h2>
+            <p class="legal__text">{{ 'legal.cookies.body' | translate }}</p>
+        </article>
+    </div>
+</section>

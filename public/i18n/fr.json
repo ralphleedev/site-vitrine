@@ -50,7 +50,9 @@
                 "too-short": "Ce message est un peu court. Pourriez-vous ajouter quelques détails ?",
                 "too-long": "Ce message est trop long. Veuillez le raccourcir un peu.",
                 "invalid": "Veuillez vérifier ce champ."
-            }
+            },
+            "contact-notice": "Les informations transmises sont utilisées uniquement pour répondre à votre message. Pour en savoir plus, consultez nos",
+            "contact-notice-link": "mentions légales"
         },
         "confirmation": {
             "title": "Message envoyé !",
@@ -104,6 +106,38 @@
             "title2": "Un projet en tête ? Parlons-en.",
             "cv-button": "Télécharger mon CV ↓",
             "cv-file": "cvs/cv-fr.pdf"
+        }
+    },
+    "legal": {
+        "title" : "Mentions Légales",
+        "last-updated": "Dernière mise à jour : 12 novembre 2026",
+        "publisher": {
+            "title": "Éditeur du site",
+            "name": "Ralph Lee"
+        },
+        "hosting": {
+            "title": "Hébergement",
+            "company": "GitHub, Inc.",
+            "address": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis",
+            "website": "https://pages.github.com/"
+        },
+        "intellectual-property": {
+            "title": "Propriété intellectuelle",
+            "body": "Les contenus originaux de ce site (textes, visuels et créations) sont protégés par le droit de la propriété intellectuelle. Toute reproduction sans autorisation préalable est interdite, sauf exceptions légales."
+        },
+        "personal-data": {
+            "title": "Données personnelles",
+            "body": "Le formulaire de contact collecte les informations nécessaires pour répondre aux messages (nom, adresse e-mail et contenu du message).",
+            "processing": "Ces données sont traitées sur la base de l'intérêt légitime de l'éditeur, utilisées uniquement pour répondre aux demandes et accessibles à l'éditeur ainsi qu'à Formspree, prestataire de traitement des formulaires.",
+            "retention": "Les données sont conservées pendant 12 mois maximum après le dernier échange, puis supprimées.",
+            "transfers": "Formspree peut traiter les données aux États-Unis. Les transferts internationaux concernés sont encadrés par des clauses contractuelles types.",
+            "rights": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données, ou vous opposer à leur traitement, en utilisant le formulaire de contact du site.",
+            "complaints": "Vous pouvez également adresser une réclamation à la CNIL.",
+            "cnil-url": "https://www.cnil.fr/"
+        },
+        "cookies": {
+            "title": "Cookies",
+            "body": "Ce site n'utilise aucun cookie publicitaire ni outil de mesure d'audience."
         }
     }
 }

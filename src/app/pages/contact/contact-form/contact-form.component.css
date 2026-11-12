@@ -49,8 +49,13 @@
   font-size: var(--font-size-base);
 }
 
-.contact-form__feedback--success { color: #1b7f3b; }
-.contact-form__feedback--error { color: #b00020; }
+.contact-form__feedback--success {
+  color: #1b7f3b;
+}
+
+.contact-form__feedback--error {
+  color: #b00020;
+}
 
 /* Off-screen rather than display:none, which some bots detect */
 .contact-form__honeypot {
@@ -62,4 +67,22 @@
   resize: vertical;
   scrollbar-width: thin;
   scrollbar-color: var(--color-primary) transparent;
+}
+
+.contact-form__notice {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.contact-form__notice-link {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-form__notice-link:hover,
+.contact-form__notice-link:focus-visible {
+  text-decoration: none;
 }

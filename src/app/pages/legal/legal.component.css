@@ -1,0 +1,31 @@
+.legal__title1 {
+  margin-bottom: 0;
+}
+
+.legal__updated {
+  opacity: 0.7;
+  font-size: 0.875rem;
+}
+
+.legal__section {
+  margin-bottom: 2rem;
+}
+
+.legal__heading {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.legal__text {
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
+}
+
+.legal__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal__link:hover {
+  text-decoration: none;
+}
